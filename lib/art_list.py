@@ -99,7 +99,8 @@ def arttype_list():
                            'solo_enabled': 'true',
                            'gui_string': 32129,
                            'art_type': 'seasonposter',
-                           'filename': 'season%02d-poster.jpg'},
+                           'filename': 'season%02d-poster.jpg',
+                           'filename_old': 'season%01d-poster.jpg'},
 
                           {'media_type': 'tvshow',
                            'bulk_enabled': setting.get('tvshow_fanart'),
@@ -141,7 +142,8 @@ def arttype_list():
                            'solo_enabled': 'true',
                            'gui_string': 32134,
                            'art_type': 'seasonlandscape',
-                           'filename': 'season%02d-landscape.jpg'},
+                           'filename': 'season%02d-landscape.jpg',
+                           'filename_old': 'season%01d-landscape.jpg'},
 
                           {'media_type': 'tvshow',
                            'bulk_enabled': setting.get('tvshow_showbanner'),
@@ -155,7 +157,8 @@ def arttype_list():
                            'solo_enabled': 'true',
                            'gui_string': 32124,
                            'art_type': 'seasonbanner',
-                           'filename': 'season%02d-banner.jpg'},
+                           'filename': 'season%02d-banner.jpg',
+                           'filename_old': 'season%01d-banner.jpg'},
 
                           {'media_type': 'tvshow',
                            'bulk_enabled': setting.get('tvshow_characterart'),

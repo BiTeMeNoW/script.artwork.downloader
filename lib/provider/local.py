@@ -40,6 +40,18 @@ class local():
     def get_image_list(self,media_item):
         image_list = []
         file_list = xbmcvfs.listdir(media_item['artworkdir'][0])
+        # Fix old filenames that were used as skin hacks
+        for item in arttype_list:
+            if item['art_type'] in ['seasonposter']:
+                n = 1
+                while(n < 10):
+                    filename_old = (item['filename_old'] % int(n))
+                    if filename_old in file_list[1]:
+                        filename_new = (item['filename'] % int(n))
+                        xbmcvfs.rename( media_item['artworkdir'][0] + filename_old, media_item['artworkdir'][0] + filename_new)
+                    n += 1
+                file_list = xbmcvfs.listdir(media_item['artworkdir'][0])
+ 
         ### Processes the bulk mode downloading of files
         i = 0 # needed
         j = 0 # have
