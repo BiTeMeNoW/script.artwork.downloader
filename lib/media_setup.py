@@ -63,6 +63,7 @@ def _media_unique(media_type, dbid):
                               'seasonstart': season_limit.get('start',''),
                               'seasonend': season_limit.get('end',''),
                               'seasons': seasons_list,
+                              'seasondata': seasons,
                               'art' : item.get('art',''),
                               'mediatype': media_type})
 
