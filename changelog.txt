@@ -1,6 +1,9 @@
 v12.1.0
 - Auto rename old season images to correct file names  (seasonX -> seasonXX)
 
+v12.0.22
+- Fix that some files where never found or downloaded
+
 v12.0.21
 - Fix change image url for TheMovieDB
 
